@@ -94,6 +94,8 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length,
 
     unique_id = 1000000000
 
+    total_missed = 0
+    
     features = []
     
     for (example_index, example) in enumerate(examples):
